@@ -1,0 +1,35 @@
+{
+  "name": "cases",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio ./wdio.conf.js",
+    "wdio": "wdio run ./wdio.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlorenciaGonzalezG/test-cases-opencart.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FlorenciaGonzalezG/test-cases-opencart/issues"
+  },
+  "homepage": "https://github.com/FlorenciaGonzalezG/test-cases-opencart#readme",
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/register": "^7.18.9",
+    "@wdio/allure-reporter": "^7.26.0",
+    "@wdio/cli": "^8.0.12",
+    "@wdio/local-runner": "^7.27.0",
+    "@wdio/mocha-framework": "^7.26.0",
+    "@wdio/selenium-standalone-service": "^7.26.0",
+    "@wdio/spec-reporter": "^7.26.0",
+    "chai": "^4.3.7",
+    "chai-webdriverio": "^1.0.0",
+    "wdio-image-comparison-service": "^5.0.2",
+    "webdriverio": "^7.27.0"
+  }
+}
