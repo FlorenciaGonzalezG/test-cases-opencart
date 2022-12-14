@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1670971428344' stop='1670971437668'>
+    <name>Opencart</name>
+    <title>Opencart</title>
+    <test-cases>
+        <test-case start='1670971428345' status='broken' stop='1670971437665'>
+            <name>Deberia buscar un articulo</name>
+            <title>Deberia buscar un articulo</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps>
+                <step start='1670971432137' status='passed' stop='1670971432137'>
+                    <name>Buscar artículo: MacBook</name>
+                    <title>Buscar artículo: MacBook</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1670971434040' status='passed' stop='1670971434040'>
+                    <name>Obtener texto de la barra de búsqueda</name>
+                    <title>Obtener texto de la barra de búsqueda</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Screenshot' source='f0b39288-6e16-401d-876a-65753a2d5c3c-attachment.png' type='image/png' size='105118'/>
+            </attachments>
+            <failure>
+                <message>Cannot convert object to primitive value</message>
+                <stack-trace>TypeError: Cannot convert object to primitive value
+                    at Function.equal (C:\Users\flore\Documents\GitHub\test-cases-opencart\node_modules\chai\lib\chai\interface\assert.js:140:13)
+                    at Context.&lt;anonymous> (C:\Users\flore\Documents\GitHub\test-cases-opencart\tests\/carrito.js:12:22)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

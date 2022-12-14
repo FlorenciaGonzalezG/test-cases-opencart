@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1670973971176' stop='1670973981060'>
+    <name>Opencart</name>
+    <title>Opencart</title>
+    <test-cases>
+        <test-case start='1670973971177' status='broken' stop='1670973981054'>
+            <name>Deberia buscar un articulo</name>
+            <title>Deberia buscar un articulo</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps>
+                <step start='1670973975128' status='passed' stop='1670973975128'>
+                    <name>Buscar artículo: MacBook</name>
+                    <title>Buscar artículo: MacBook</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1670973976924' status='passed' stop='1670973976924'>
+                    <name>Obtener texto de la barra de búsqueda</name>
+                    <title>Obtener texto de la barra de búsqueda</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Screenshot' source='aaca4081-a4ce-4e87-9d96-9e9cc1b87934-attachment.png' type='image/png' size='105056'/>
+            </attachments>
+            <failure>
+                <message>_articulo.default.anadirAlCarrito is not a function</message>
+                <stack-trace>TypeError: _articulo.default.anadirAlCarrito is not a function
+                    at Context.&lt;anonymous> (C:\Users\flore\Documents\GitHub\test-cases-opencart\tests\/carrito.js:13:28)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

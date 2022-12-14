@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1670965659823' stop='1670965664493'>
+    <name>OpenCart</name>
+    <title>OpenCart</title>
+    <test-cases>
+        <test-case start='1670965659824' status='passed' stop='1670965664491'>
+            <name>Debería buscar iPhone</name>
+            <title>Debería buscar iPhone</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps>
+                <step start='1670965659828' status='passed' stop='1670965664377'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='e8ce98c0-7bad-45ac-9378-4eecd81db006-attachment.json' type='application/json' size='44'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1670965664380' status='passed' stop='1670965664479'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='dcf927f8-d97c-46be-95d9-b12a91a38d54-attachment.json' type='application/json' size='49'/>
+                        <attachment title='Response' source='9300a3d2-1da7-4284-93eb-9e3f23ec84dd-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1670974068351' stop='1670974082351'>
+    <name>Opencart</name>
+    <title>Opencart</title>
+    <test-cases>
+        <test-case start='1670974068352' status='passed' stop='1670974082350'>
+            <name>Deberia buscar un articulo</name>
+            <title>Deberia buscar un articulo</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps>
+                <step start='1670974071557' status='passed' stop='1670974071558'>
+                    <name>Buscar artículo: MacBook</name>
+                    <title>Buscar artículo: MacBook</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1670974073369' status='passed' stop='1670974073369'>
+                    <name>Obtener texto de la barra de búsqueda</name>
+                    <title>Obtener texto de la barra de búsqueda</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,44 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1670969384896' stop='1670969391023'>
+    <name>Opencart</name>
+    <title>Opencart</title>
+    <test-cases>
+        <test-case start='1670969384897' status='broken' stop='1670969391021'>
+            <name>Deberia buscar un articulo</name>
+            <title>Deberia buscar un articulo</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps>
+                <step start='1670969388739' status='passed' stop='1670969388739'>
+                    <name>Buscar artículo: MacBook</name>
+                    <title>Buscar artículo: MacBook</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1670969390692' status='passed' stop='1670969390692'>
+                    <name>Obtener texto de la barra de búsqueda</name>
+                    <title>Obtener texto de la barra de búsqueda</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Screenshot' source='b64d5744-8366-4e73-97a2-d73afb88234d-attachment.png' type='image/png' size='66733'/>
+            </attachments>
+            <failure>
+                <message>divnth is not defined</message>
+                <stack-trace>ReferenceError: divnth is not defined
+                    at BusquedaPage.resultado (C:\Users\flore\Documents\GitHub\test-cases-opencart\pages\/busqueda.page.js:6:30)
+                    at BusquedaPage.obtenerNombreResultado (C:\Users\flore\Documents\GitHub\test-cases-opencart\pages\/busqueda.page.js:21:26)
+                    at Context.&lt;anonymous> (C:\Users\flore\Documents\GitHub\test-cases-opencart\tests\/carrito.js:10:47)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

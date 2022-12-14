@@ -4,7 +4,7 @@ class BusquedaPage extends BasePage {
 
    //Elementos Web
    get resultado(){ return $('h4') }
-
+   
    //-------------------------------------------------------------------------------------------------------//
  
    /**
