@@ -6,13 +6,6 @@ class BusquedaPage extends BasePage {
    get resultado(){ return $('h4') }
    
    //-------------------------------------------------------------------------------------------------------//
- 
-   /**
-    * Click en el resultado de la búsqueda
-    */
-   async ingresarAlResultado() {
-       await super.clickearElemento(this.resultado);
-   }
 
    /**
     * Obtener texto del resultado de la búsqueda

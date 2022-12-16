@@ -1,18 +1,24 @@
+import { expect } from 'chai';
 import homePage from '../pages/home.page';
 import busquedaPage from '../pages/busqueda.page';
-import articuloPage from '../pages/articulo.page';
-import { assert } from 'chai';
-describe ('Opencart', () => {
-    it('Deberia buscar un articulo y agregarlo al carrito', async () => {
+import productPage from '../pages/product.page';
+
+
+const productOne = 'MacBook';
+const productTwo = 'iPhone';
+const Arrayproducts = [productOne, productTwo]
+
+describe ('Opencart', function () {
+    Arrayproducts.forEach((product) => { 
+    it(`Deberia buscar ${product} y agregarlo al carrito`, async () => {
         await homePage.abrir('/');
-        let articulo = 'MacBook'
-        await homePage.buscar(articulo);
-        await assert.equal(await homePage.obtenerTextoBusqueda(),(articulo),'Error: no se mostro el texto esperado en la barra de busqueda');
-        await assert.equal(await busquedaPage.obtenerNombreResultado(),(articulo), 'Error: no se mostro el header esperado');
-        await articuloPage.ingresarAlArticulo()
-        await assert.equal(await articuloPage.obtenerNombreArticulo(),(articulo), 'Error: no se mostro el header esperado');
-        await articuloPage.anadirAlCarrito()
+        await homePage.buscar(product);
+        await assert.equal(await homePage.obtenerTextoBusqueda(),(product),'Error: no se mostro el texto esperado en la barra de busqueda');
+        await assert.equal(await busquedaPage.obtenerNombreResultado(),(product), 'Error: no se mostro el header esperado');
+        await productPage.ingresarAlProducto(product)
+        await assert.equal(await productPage.obtenerNombreProducto(),(product), 'Error: no se mostro el header esperado');
+        await productPage.anadirAlCarrito()
         await browser.pause(5000);
     })
 })
-
+})

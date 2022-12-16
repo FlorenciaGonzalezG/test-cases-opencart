@@ -1,0 +1,81 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1671154014199' stop='1671154022944'>
+    <name>Opencart</name>
+    <title>Opencart</title>
+    <test-cases>
+        <test-case start='1671154014200' status='broken' stop='1671154020463'>
+            <name>Deberia buscar MacBook y agregarlo al carrito</name>
+            <title>Deberia buscar MacBook y agregarlo al carrito</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.100'/>
+            </parameters>
+            <steps>
+                <step start='1671154017837' status='passed' stop='1671154017837'>
+                    <name>Buscar artículo: MacBook</name>
+                    <title>Buscar artículo: MacBook</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671154019930' status='passed' stop='1671154019930'>
+                    <name>Obtener texto de la barra de búsqueda</name>
+                    <title>Obtener texto de la barra de búsqueda</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Screenshot' source='b3623e28-9e4e-45d8-a204-75054f07ae1a-attachment.png' type='image/png' size='66733'/>
+            </attachments>
+            <failure>
+                <message>product is not defined</message>
+                <stack-trace>ReferenceError: product is not defined
+                    at ProductPage.producto (C:\Users\flore\Documents\GitHub\test-cases-opencart\pages\/product.page.js:8:50)
+                    at ProductPage.ingresarAlProducto (C:\Users\flore\Documents\GitHub\test-cases-opencart\pages\/product.page.js:13:39)
+                    at Context.&lt;anonymous> (C:\Users\flore\Documents\GitHub\test-cases-opencart\tests\/carrito.js:18:27)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1671154020464' status='broken' stop='1671154022942'>
+            <name>Deberia buscar iPhone y agregarlo al carrito</name>
+            <title>Deberia buscar iPhone y agregarlo al carrito</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.100'/>
+            </parameters>
+            <steps>
+                <step start='1671154020997' status='passed' stop='1671154020997'>
+                    <name>Buscar artículo: iPhone</name>
+                    <title>Buscar artículo: iPhone</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671154022506' status='passed' stop='1671154022506'>
+                    <name>Obtener texto de la barra de búsqueda</name>
+                    <title>Obtener texto de la barra de búsqueda</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Screenshot' source='41742d3e-be2f-42a4-ac22-727f4823686f-attachment.png' type='image/png' size='64274'/>
+            </attachments>
+            <failure>
+                <message>product is not defined</message>
+                <stack-trace>ReferenceError: product is not defined
+                    at ProductPage.producto (C:\Users\flore\Documents\GitHub\test-cases-opencart\pages\/product.page.js:8:50)
+                    at ProductPage.ingresarAlProducto (C:\Users\flore\Documents\GitHub\test-cases-opencart\pages\/product.page.js:13:39)
+                    at Context.&lt;anonymous> (C:\Users\flore\Documents\GitHub\test-cases-opencart\tests\/carrito.js:18:27)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

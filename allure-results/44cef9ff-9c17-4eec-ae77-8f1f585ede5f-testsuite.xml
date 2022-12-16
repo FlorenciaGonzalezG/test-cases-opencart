@@ -1,0 +1,85 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1671155054160' stop='1671155071814'>
+    <name>Opencart</name>
+    <title>Opencart</title>
+    <test-cases>
+        <test-case start='1671155054161' status='failed' stop='1671155064131'>
+            <name>Deberia buscar MacBook y agregarlo al carrito</name>
+            <title>Deberia buscar MacBook y agregarlo al carrito</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.100'/>
+            </parameters>
+            <steps>
+                <step start='1671155057501' status='passed' stop='1671155057501'>
+                    <name>Buscar artículo: MacBook</name>
+                    <title>Buscar artículo: MacBook</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671155059319' status='passed' stop='1671155059319'>
+                    <name>Obtener texto de la barra de búsqueda</name>
+                    <title>Obtener texto de la barra de búsqueda</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Screenshot' source='0a8c59b0-699d-4d4a-8cd8-448190b59f25-attachment.png' type='image/png' size='105118'/>
+            </attachments>
+            <failure>
+                <message>Error: no se mostro el header esperado: expected 'Your Store' to equal 'MacBook'      
+                      actual expected
+                      
+                      'Your StoreMacBook'
+                      </message>
+                <stack-trace>AssertionError: Error: no se mostro el header esperado: expected 'Your Store' to equal 'MacBook'
+                    at Context.&lt;anonymous> (C:\Users\flore\Documents\GitHub\test-cases-opencart\tests\/carrito.js:19:22)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1671155064136' status='failed' stop='1671155071813'>
+            <name>Deberia buscar iPhone y agregarlo al carrito</name>
+            <title>Deberia buscar iPhone y agregarlo al carrito</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.100'/>
+            </parameters>
+            <steps>
+                <step start='1671155065137' status='passed' stop='1671155065137'>
+                    <name>Buscar artículo: iPhone</name>
+                    <title>Buscar artículo: iPhone</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671155066773' status='passed' stop='1671155066773'>
+                    <name>Obtener texto de la barra de búsqueda</name>
+                    <title>Obtener texto de la barra de búsqueda</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Screenshot' source='81ff770e-d1b5-499f-bbfd-f23165bc6446-attachment.png' type='image/png' size='125790'/>
+            </attachments>
+            <failure>
+                <message>Error: no se mostro el header esperado: expected 'Your Store' to equal 'iPhone'      
+                      actual expected
+                      
+                      'Your StoreiPhone'
+                      </message>
+                <stack-trace>AssertionError: Error: no se mostro el header esperado: expected 'Your Store' to equal 'iPhone'
+                    at Context.&lt;anonymous> (C:\Users\flore\Documents\GitHub\test-cases-opencart\tests\/carrito.js:19:22)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,50 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1671149448302' stop='1671149464480'>
+    <name>Opencart</name>
+    <title>Opencart</title>
+    <test-cases>
+        <test-case start='1671149448303' status='broken' stop='1671149464478'>
+            <name>Deberia buscar MacBook y agregarlo al carrito</name>
+            <title>Deberia buscar MacBook y agregarlo al carrito</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.100'/>
+            </parameters>
+            <steps>
+                <step start='1671149451912' status='passed' stop='1671149451912'>
+                    <name>Buscar artículo: MacBook</name>
+                    <title>Buscar artículo: MacBook</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671149453714' status='passed' stop='1671149453714'>
+                    <name>Obtener texto de la barra de búsqueda</name>
+                    <title>Obtener texto de la barra de búsqueda</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Screenshot' source='582fce98-225f-483b-a3dd-60685dce0eda-attachment.png' type='image/png' size='147622'/>
+            </attachments>
+            <failure>
+                <message>element ("//a[text()= MacBook]") still not clickable after 10000ms</message>
+                <stack-trace>Error: element ("//a[text()= MacBook]") still not clickable after 10000ms
+                    at C:\Users\flore\Documents\GitHub\test-cases-opencart\node_modules\webdriverio\build\commands\browser\waitUntil.js:66:23
+                    at Element.wrapCommandFn (C:\Users\flore\Documents\GitHub\test-cases-opencart\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at Element.elementErrorHandlerCallbackFn (C:\Users\flore\Documents\GitHub\test-cases-opencart\node_modules\webdriverio\build\middlewares.js:24:32)
+                    at Element.wrapCommandFn (C:\Users\flore\Documents\GitHub\test-cases-opencart\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at Element.wrapCommandFn (C:\Users\flore\Documents\GitHub\test-cases-opencart\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at Element.elementErrorHandlerCallbackFn (C:\Users\flore\Documents\GitHub\test-cases-opencart\node_modules\webdriverio\build\middlewares.js:24:32)
+                    at Element.wrapCommandFn (C:\Users\flore\Documents\GitHub\test-cases-opencart\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at ProductPage.clickearElemento (C:\Users\flore\Documents\GitHub\test-cases-opencart\pages\/base.page.js:20:8)
+                    at ProductPage.ingresarAlProducto (C:\Users\flore\Documents\GitHub\test-cases-opencart\pages\/product.page.js:12:5)
+                    at Context.&lt;anonymous> (C:\Users\flore\Documents\GitHub\test-cases-opencart\tests\/carrito.js:13:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

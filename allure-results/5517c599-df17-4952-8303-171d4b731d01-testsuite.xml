@@ -1,0 +1,44 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1670977917090' stop='1670977924306'>
+    <name>Agregar articulos al carrito</name>
+    <title>Agregar articulos al carrito</title>
+    <test-cases>
+        <test-case start='1670977917091' status='broken' stop='1670977924305'>
+            <name>Deberia buscar ${DATA.articulo} y agregarlo al carrito</name>
+            <title>Deberia buscar ${DATA.articulo} y agregarlo al carrito</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps>
+                <step start='1670977921217' status='passed' stop='1670977921217'>
+                    <name>Buscar artículo: MacBook</name>
+                    <title>Buscar artículo: MacBook</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1670977923767' status='passed' stop='1670977923767'>
+                    <name>Obtener texto de la barra de búsqueda</name>
+                    <title>Obtener texto de la barra de búsqueda</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Screenshot' source='93d0d841-8749-4367-a6f4-e824fcc83059-attachment.png' type='image/png' size='66716'/>
+            </attachments>
+            <failure>
+                <message>elemento.waitForClickable is not a function</message>
+                <stack-trace>TypeError: elemento.waitForClickable is not a function
+                    at ArticuloPage.clickearElemento (C:\Users\flore\Documents\GitHub\test-cases-opencart\pages\/base.page.js:20:23)
+                    at ArticuloPage.ingresarAlArticulo (C:\Users\flore\Documents\GitHub\test-cases-opencart\pages\/articulo.page.js:12:17)
+                    at Context.&lt;anonymous> (C:\Users\flore\Documents\GitHub\test-cases-opencart\tests\/carrito.js:12:28)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

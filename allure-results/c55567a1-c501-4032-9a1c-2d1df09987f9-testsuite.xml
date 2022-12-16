@@ -1,0 +1,84 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1671154606916' stop='1671154637015'>
+    <name>Opencart</name>
+    <title>Opencart</title>
+    <test-cases>
+        <test-case start='1671154606917' status='broken' stop='1671154626049'>
+            <name>Deberia buscar MacBook y agregarlo al carrito</name>
+            <title>Deberia buscar MacBook y agregarlo al carrito</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.100'/>
+            </parameters>
+            <steps>
+                <step start='1671154610915' status='passed' stop='1671154610915'>
+                    <name>Buscar artículo: MacBook</name>
+                    <title>Buscar artículo: MacBook</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671154613080' status='passed' stop='1671154613080'>
+                    <name>Obtener texto de la barra de búsqueda</name>
+                    <title>Obtener texto de la barra de búsqueda</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Screenshot' source='fc2bb628-e4eb-492d-932b-0d3aa159c4bf-attachment.png' type='image/png' size='105038'/>
+            </attachments>
+            <failure>
+                <message>Can't call getText on element with selector "//h4/a" because element wasn't found</message>
+                <stack-trace>Error: Can't call getText on element with selector "//h4/a" because element wasn't found
+                    at implicitWait (C:\Users\flore\Documents\GitHub\test-cases-opencart\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at Element.elementErrorHandlerCallbackFn (C:\Users\flore\Documents\GitHub\test-cases-opencart\node_modules\webdriverio\build\middlewares.js:20:29)
+                    at Element.wrapCommandFn (C:\Users\flore\Documents\GitHub\test-cases-opencart\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at ProductPage.obtenerNombreProducto (C:\Users\flore\Documents\GitHub\test-cases-opencart\pages\/product.page.js:16:12)
+                    at Context.&lt;anonymous> (C:\Users\flore\Documents\GitHub\test-cases-opencart\tests\/carrito.js:19:28)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1671154626050' status='failed' stop='1671154637014'>
+            <name>Deberia buscar iPhone y agregarlo al carrito</name>
+            <title>Deberia buscar iPhone y agregarlo al carrito</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.100'/>
+            </parameters>
+            <steps>
+                <step start='1671154627391' status='passed' stop='1671154627391'>
+                    <name>Buscar artículo: iPhone</name>
+                    <title>Buscar artículo: iPhone</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671154629460' status='passed' stop='1671154629460'>
+                    <name>Obtener texto de la barra de búsqueda</name>
+                    <title>Obtener texto de la barra de búsqueda</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Screenshot' source='a9f313fc-5702-4bf4-be46-46868a2c939c-attachment.png' type='image/png' size='125307'/>
+            </attachments>
+            <failure>
+                <message>Error: no se mostro el header esperado: expected 'Apple Cinema 30"' to equal 'iPhone'      
+                      actual expected
+                      
+                      'Apple Cinema 30"iPhone'
+                      </message>
+                <stack-trace>AssertionError: Error: no se mostro el header esperado: expected 'Apple Cinema 30"' to equal 'iPhone'
+                    at Context.&lt;anonymous> (C:\Users\flore\Documents\GitHub\test-cases-opencart\tests\/carrito.js:19:22)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
