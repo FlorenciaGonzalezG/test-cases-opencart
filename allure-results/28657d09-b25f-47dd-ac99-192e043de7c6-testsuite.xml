@@ -1,0 +1,166 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1671470596654' stop='1671470619084'>
+    <name>Opencart</name>
+    <title>Opencart</title>
+    <test-cases>
+        <test-case start='1671470596655' status='passed' stop='1671470608142'>
+            <name>Deberia buscar MacBook y agregarlo al carrito</name>
+            <title>Deberia buscar MacBook y agregarlo al carrito</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.100'/>
+            </parameters>
+            <steps>
+                <step start='1671470599950' status='passed' stop='1671470599950'>
+                    <name>Buscar producto: MacBook</name>
+                    <title>Buscar producto: MacBook</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671470602654' status='passed' stop='1671470602654'>
+                    <name>Obtener texto de la barra de búsqueda</name>
+                    <title>Obtener texto de la barra de búsqueda</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671470602899' status='passed' stop='1671470602899'>
+                    <name>Ingresa a MacBook.</name>
+                    <title>Ingresa a MacBook.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671470605750' status='passed' stop='1671470605750'>
+                    <name>Obtiene precio de MacBook</name>
+                    <title>Obtiene precio de MacBook</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671470606176' status='passed' stop='1671470606176'>
+                    <name>Agrega los precios a un array</name>
+                    <title>Agrega los precios a un array</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671470606416' status='passed' stop='1671470606416'>
+                    <name>Agrega MacBook al carrito.</name>
+                    <title>Agrega MacBook al carrito.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671470607115' status='passed' stop='1671470607115'>
+                    <name>Obtiene mensaje de exito de agregado al carrito</name>
+                    <title>Obtiene mensaje de exito de agregado al carrito</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1671470608142' status='passed' stop='1671470614999'>
+            <name>Deberia buscar iPhone y agregarlo al carrito</name>
+            <title>Deberia buscar iPhone y agregarlo al carrito</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.100'/>
+            </parameters>
+            <steps>
+                <step start='1671470608942' status='passed' stop='1671470608942'>
+                    <name>Buscar producto: iPhone</name>
+                    <title>Buscar producto: iPhone</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671470610709' status='passed' stop='1671470610709'>
+                    <name>Obtener texto de la barra de búsqueda</name>
+                    <title>Obtener texto de la barra de búsqueda</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671470610951' status='passed' stop='1671470610951'>
+                    <name>Ingresa a iPhone.</name>
+                    <title>Ingresa a iPhone.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671470613252' status='passed' stop='1671470613252'>
+                    <name>Obtiene precio de iPhone</name>
+                    <title>Obtiene precio de iPhone</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671470613431' status='passed' stop='1671470613431'>
+                    <name>Agrega los precios a un array</name>
+                    <title>Agrega los precios a un array</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671470614279' status='passed' stop='1671470614279'>
+                    <name>Agrega iPhone al carrito.</name>
+                    <title>Agrega iPhone al carrito.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671470614540' status='passed' stop='1671470614540'>
+                    <name>Obtiene mensaje de exito de agregado al carrito</name>
+                    <title>Obtiene mensaje de exito de agregado al carrito</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1671470615000' status='passed' stop='1671470619082'>
+            <name>Deberia chequear que los dos productos se agregaron al carrito</name>
+            <title>Deberia chequear que los dos productos se agregaron al carrito</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.100'/>
+            </parameters>
+            <steps>
+                <step start='1671470615001' status='passed' stop='1671470615001'>
+                    <name>Ingresa al carrito</name>
+                    <title>Ingresa al carrito</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671470615275' status='passed' stop='1671470615275'>
+                    <name>Obtiene precio del total de la compra del carrito</name>
+                    <title>Obtiene precio del total de la compra del carrito</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671470615532' status='passed' stop='1671470615532'>
+                    <name>Compara precio de los productos con precio total del carrito</name>
+                    <title>Compara precio de los productos con precio total del carrito</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671470615532' status='passed' stop='1671470615532'>
+                    <name>Elimina los productos del carrito</name>
+                    <title>Elimina los productos del carrito</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671470618018' status='passed' stop='1671470618018'>
+                    <name>Retorna a la pagina principal.</name>
+                    <title>Retorna a la pagina principal.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

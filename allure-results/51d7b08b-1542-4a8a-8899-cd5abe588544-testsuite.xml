@@ -1,0 +1,111 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1671493123870' stop='1671493141280'>
+    <name>Shopping cart</name>
+    <title>Shopping cart</title>
+    <test-cases>
+        <test-case start='1671493123871' status='broken' stop='1671493128231'>
+            <name>Deberia buscar MacBook y agregarlo al carrito</name>
+            <title>Deberia buscar MacBook y agregarlo al carrito</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.100'/>
+            </parameters>
+            <steps>
+                <step start='1671493127745' status='passed' stop='1671493127746'>
+                    <name>Buscar producto: MacBook</name>
+                    <title>Buscar producto: MacBook</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Screenshot' source='f54ee704-9789-469c-b564-81b94e20a882-attachment.png' type='image/png' size='163138'/>
+            </attachments>
+            <failure>
+                <message>Cannot read properties of undefined (reading 'isDevTools')</message>
+                <stack-trace>TypeError: Cannot read properties of undefined (reading 'isDevTools')
+                    at findElement (C:\Users\flore\Documents\GitHub\test-cases-opencart\node_modules\webdriverio\build\utils\index.js:216:15)
+                    at $ (C:\Users\flore\Documents\GitHub\test-cases-opencart\node_modules\webdriverio\build\commands\browser\$.js:91:43)
+                    at HomePage.barraDeBusqueda (C:\Users\flore\Documents\GitHub\test-cases-opencart\pages\/home.page.js:7:37)
+                    at HomePage.buscar (C:\Users\flore\Documents\GitHub\test-cases-opencart\pages\/home.page.js:20:55)
+                    at Context.&lt;anonymous> (C:\Users\flore\Documents\GitHub\test-cases-opencart\tests\/carrito.js:18:24)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1671493128232' status='broken' stop='1671493129814'>
+            <name>Deberia buscar iPhone y agregarlo al carrito</name>
+            <title>Deberia buscar iPhone y agregarlo al carrito</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.100'/>
+            </parameters>
+            <steps>
+                <step start='1671493129455' status='passed' stop='1671493129455'>
+                    <name>Buscar producto: iPhone</name>
+                    <title>Buscar producto: iPhone</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Screenshot' source='a26d33a3-10f6-4332-864b-32f703314ab3-attachment.png' type='image/png' size='162833'/>
+            </attachments>
+            <failure>
+                <message>Cannot read properties of undefined (reading 'isDevTools')</message>
+                <stack-trace>TypeError: Cannot read properties of undefined (reading 'isDevTools')
+                    at findElement (C:\Users\flore\Documents\GitHub\test-cases-opencart\node_modules\webdriverio\build\utils\index.js:216:15)
+                    at $ (C:\Users\flore\Documents\GitHub\test-cases-opencart\node_modules\webdriverio\build\commands\browser\$.js:91:43)
+                    at HomePage.barraDeBusqueda (C:\Users\flore\Documents\GitHub\test-cases-opencart\pages\/home.page.js:7:37)
+                    at HomePage.buscar (C:\Users\flore\Documents\GitHub\test-cases-opencart\pages\/home.page.js:20:55)
+                    at Context.&lt;anonymous> (C:\Users\flore\Documents\GitHub\test-cases-opencart\tests\/carrito.js:18:24)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1671493129815' status='broken' stop='1671493141279'>
+            <name>Deberia chequear que los dos productos se agregaron al carrito</name>
+            <title>Deberia chequear que los dos productos se agregaron al carrito</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.100'/>
+            </parameters>
+            <steps>
+                <step start='1671493129817' status='passed' stop='1671493129817'>
+                    <name>Ingresar al carrito</name>
+                    <title>Ingresar al carrito</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671493130423' status='passed' stop='1671493130423'>
+                    <name>Obtener precio del total de la compra del carrito</name>
+                    <title>Obtener precio del total de la compra del carrito</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Screenshot' source='ae24cef6-148a-48bc-a0d8-c1a011bd31e6-attachment.png' type='image/png' size='163813'/>
+            </attachments>
+            <failure>
+                <message>Can't call getText on element with selector "//tr[4]/td[2]" because element wasn't found</message>
+                <stack-trace>Error: Can't call getText on element with selector "//tr[4]/td[2]" because element wasn't found
+                    at implicitWait (C:\Users\flore\Documents\GitHub\test-cases-opencart\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at Element.elementErrorHandlerCallbackFn (C:\Users\flore\Documents\GitHub\test-cases-opencart\node_modules\webdriverio\build\middlewares.js:20:29)
+                    at Element.wrapCommandFn (C:\Users\flore\Documents\GitHub\test-cases-opencart\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at shoppingcartPage.totalPriceShoppingcart (C:\Users\flore\Documents\GitHub\test-cases-opencart\pages\/shoppingcart.page.js:26:16)
+                    at Context.&lt;anonymous> (C:\Users\flore\Documents\GitHub\test-cases-opencart\tests\/carrito.js:37:29)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

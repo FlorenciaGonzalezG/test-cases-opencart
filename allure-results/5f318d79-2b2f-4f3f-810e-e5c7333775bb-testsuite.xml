@@ -1,0 +1,190 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1671473063391' stop='1671473087289'>
+    <name>Opencart</name>
+    <title>Opencart</title>
+    <test-cases>
+        <test-case start='1671473063391' status='passed' stop='1671473075425'>
+            <name>Deberia buscar MacBook y agregarlo al carrito</name>
+            <title>Deberia buscar MacBook y agregarlo al carrito</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.100'/>
+            </parameters>
+            <steps>
+                <step start='1671473067433' status='passed' stop='1671473067433'>
+                    <name>Buscar producto: MacBook</name>
+                    <title>Buscar producto: MacBook</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671473069869' status='passed' stop='1671473069869'>
+                    <name>Obtener texto de la barra de búsqueda</name>
+                    <title>Obtener texto de la barra de búsqueda</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671473070178' status='passed' stop='1671473070178'>
+                    <name>Ingresar al producto: MacBook.</name>
+                    <title>Ingresar al producto: MacBook.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671473073741' status='passed' stop='1671473073741'>
+                    <name>Obtener precio del producto: MacBook</name>
+                    <title>Obtener precio del producto: MacBook</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671473073992' status='passed' stop='1671473073992'>
+                    <name>Agregar los precios a un array</name>
+                    <title>Agregar los precios a un array</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671473074227' status='passed' stop='1671473074227'>
+                    <name>Agregar producto al carrito.</name>
+                    <title>Agregar producto al carrito.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671473074559' status='passed' stop='1671473074559'>
+                    <name>Obtener mensaje de exito de agregado al carrito</name>
+                    <title>Obtener mensaje de exito de agregado al carrito</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1671473075426' status='passed' stop='1671473082367'>
+            <name>Deberia buscar iPhone y agregarlo al carrito</name>
+            <title>Deberia buscar iPhone y agregarlo al carrito</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.100'/>
+            </parameters>
+            <steps>
+                <step start='1671473076263' status='passed' stop='1671473076263'>
+                    <name>Buscar producto: iPhone</name>
+                    <title>Buscar producto: iPhone</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671473077775' status='passed' stop='1671473077775'>
+                    <name>Obtener texto de la barra de búsqueda</name>
+                    <title>Obtener texto de la barra de búsqueda</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671473077988' status='passed' stop='1671473077988'>
+                    <name>Ingresar al producto: iPhone.</name>
+                    <title>Ingresar al producto: iPhone.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671473080537' status='passed' stop='1671473080537'>
+                    <name>Obtener precio del producto: iPhone</name>
+                    <title>Obtener precio del producto: iPhone</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671473080737' status='passed' stop='1671473080737'>
+                    <name>Agregar los precios a un array</name>
+                    <title>Agregar los precios a un array</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671473081333' status='passed' stop='1671473081333'>
+                    <name>Agregar producto al carrito.</name>
+                    <title>Agregar producto al carrito.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671473081606' status='passed' stop='1671473081606'>
+                    <name>Obtener mensaje de exito de agregado al carrito</name>
+                    <title>Obtener mensaje de exito de agregado al carrito</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1671473082367' status='passed' stop='1671473087288'>
+            <name>Deberia chequear que los dos productos se agregaron al carrito</name>
+            <title>Deberia chequear que los dos productos se agregaron al carrito</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.100'/>
+            </parameters>
+            <steps>
+                <step start='1671473082368' status='passed' stop='1671473082368'>
+                    <name>Ingresar al carrito</name>
+                    <title>Ingresar al carrito</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671473083052' status='passed' stop='1671473083052'>
+                    <name>Obtener precio del total de la compra del carrito</name>
+                    <title>Obtener precio del total de la compra del carrito</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671473083163' status='passed' stop='1671473083163'>
+                    <name>Comparar precio de los productos con precio total del carrito</name>
+                    <title>Comparar precio de los productos con precio total del carrito</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671473083164' status='passed' stop='1671473083164'>
+                    <name>Eliminar productos del carrito</name>
+                    <title>Eliminar productos del carrito</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671473083472' status='passed' stop='1671473083472'>
+                    <name>Ingresar al carrito</name>
+                    <title>Ingresar al carrito</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671473084111' status='passed' stop='1671473084111'>
+                    <name>Eliminar productos del carrito</name>
+                    <title>Eliminar productos del carrito</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671473084438' status='passed' stop='1671473084438'>
+                    <name>Ingresar al carrito</name>
+                    <title>Ingresar al carrito</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671473085223' status='passed' stop='1671473085223'>
+                    <name>Allert message: Your shopping cart is empty!</name>
+                    <title>Allert message: Your shopping cart is empty!</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1671473085336' status='passed' stop='1671473085336'>
+                    <name>Retorna a la pagina principal.</name>
+                    <title>Retorna a la pagina principal.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
