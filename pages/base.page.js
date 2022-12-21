@@ -34,5 +34,5 @@ export default class BasePage {
        await elemento.keys(texto);
    }
 
-
+  
 }

@@ -1,0 +1,11 @@
+{ 
+    "DATA":  {
+    
+        "firstName": "userFirstName",
+        "lastName": "userLastName",
+        "email": "userEmail@gmail.com",
+        "telephone": "12345678",
+        "password": "userPassword1",
+        "passwordConfirm": "userPassword1"
+}
+}   

@@ -3,9 +3,11 @@ import BasePage from '../pages/base.page';
 class HomePage extends BasePage {
 
    //WebElements
-   get barraDeBusqueda()  { return $('[name="search"]') };
-   get storeTtl()         { return $('//h1/a') };
-   get mainPage()         { return $('#common-home') }
+   get barraDeBusqueda()   { return $('[name="search"]') };
+   get storeTtl()          { return $('//h1/a') };
+   get mainPage()          { return $('#common-home') };
+   get dropDownMyAccount() { return $('.dropdown') };
+   get register()          { return $('.dropdown-menu.dropdown-menu-right').$('li:nth-child(1)').$('a') }  
 
 
    //-------------------------------------------------------------------------------------------------------//
@@ -36,8 +38,18 @@ class HomePage extends BasePage {
       await super.clickearElemento(this.storeTtl);
    }
    
- 
+   /**
+    * Desplegar dropdown de my account
+    */
+   async desplegarDropDown() {
+      addStep('Desplegar dropdown de my account.');
+      await super.clickearElemento(this.dropDownMyAccount);
+   }
    
+   async clickRegister() {
+      addStep('Ingresar en register.')
+      await super.clickearElemento(this.register);
+   }
 
 }
 export default new HomePage();
