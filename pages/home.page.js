@@ -4,10 +4,16 @@ class HomePage extends BasePage {
 
    //WebElements
    get barraDeBusqueda()   { return $('[name="search"]') };
+   
    get storeTtl()          { return $('//h1/a') };
+   
    get mainPage()          { return $('#common-home') };
+   
    get dropDownMyAccount() { return $('.dropdown') };
+   
    get register()          { return $('.dropdown-menu.dropdown-menu-right').$('li:nth-child(1)').$('a') }  
+
+   get login()             { return $('.dropdown-menu.dropdown-menu-right').$('li:nth-child(2)').$('a') }  
 
 
    //-------------------------------------------------------------------------------------------------------//
@@ -46,9 +52,20 @@ class HomePage extends BasePage {
       await super.clickearElemento(this.dropDownMyAccount);
    }
    
+   /**
+    * Clickear sobre register 
+    */
    async clickRegister() {
       addStep('Ingresar en register.')
       await super.clickearElemento(this.register);
+   }
+
+   /**
+    * Clickear sobre login
+    */
+   async clickLogIn() {
+      addStep('Ingresar en login.')
+      await super.clickearElemento(this.login);
    }
 
 }

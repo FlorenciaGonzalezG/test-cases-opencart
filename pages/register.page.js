@@ -5,6 +5,8 @@ class registerPage extends BasePage {
     //Web Elements
     get pageTtl()             { return $('#content').$('h1') };
 
+    get dropDownMenu()        { return $('.dropdown-menu.dropdown-menu-right') };
+
     get firstNameForm()       { return $('#input-firstname') };
 
     get lastNameForm()        { return $('#input-lastname') };
@@ -59,7 +61,7 @@ class registerPage extends BasePage {
         await this.telephoneForm.setValue(telephone);
         await this.passwordForm.setValue(password);
         await this.passwordConfirmForm.setValue(confirmPassword);
-        addStep('Aceptar politcas de privacidad.');
+        addStep('Aceptar politicas de privacidad.');
         await super.clickearElemento(this.agreeChk);
         addStep('Enviar formulario.');
         await super.clickearElemento(this.continueFormBtn);
@@ -80,7 +82,9 @@ class registerPage extends BasePage {
         await super.clickearElemento(this.continueBtn);    
      }
 
-
+     /**
+      * Volver a la pagina principal
+      */
      async backHomePage() {
         await super.clickearElemento(this.homeBtn)
      }
