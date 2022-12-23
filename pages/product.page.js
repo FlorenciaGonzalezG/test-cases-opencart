@@ -5,11 +5,15 @@ class ProductPage extends BasePage {
 
    //WebElements
 
-   get producto()      { return $('//h4/a') };
-   get addCartBtn()    { return $('#button-cart') } ;
-   get productName()   { return $('#content').$('h1') };
-   get successMsg()    { return $('.alert.alert-success.alert-dismissible') };
-   get priceProduct()  { return $('//li/h2') };
+   get producto() {return $('//h4/a')};
+   
+   get addCartBtn() {return $('#button-cart')};
+   
+   get productName() {return $('#content').$('h1')};
+   
+   get successMsg() {return $('.alert.alert-success.alert-dismissible')};
+   
+   get priceProduct() {return $('//li/h2')};
 
 //---------------------------------------------------------------------------------------------   
 
@@ -47,7 +51,7 @@ class ProductPage extends BasePage {
  * Obtener precio del producto
  */
    async price() {
-    return await this.priceProduct.getText()
+    return await this.priceProduct.getText();
    }
 }
 export default new ProductPage();

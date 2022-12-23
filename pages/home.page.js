@@ -3,17 +3,17 @@ import BasePage from '../pages/base.page';
 class HomePage extends BasePage {
 
    //WebElements
-   get barraDeBusqueda()   { return $('[name="search"]') };
+   get barraDeBusqueda() {return $('[name="search"]')};
    
-   get storeTtl()          { return $('//h1/a') };
+   get storeTtl() {return $('//h1/a')};
    
-   get mainPage()          { return $('#common-home') };
+   get mainPage() {return $('#common-home')};
    
-   get dropDownMyAccount() { return $('.dropdown') };
+   get dropDownMyAccount() {return $('.dropdown')};
    
-   get register()          { return $('.dropdown-menu.dropdown-menu-right').$('li:nth-child(1)').$('a') }  
-
-   get login()             { return $('.dropdown-menu.dropdown-menu-right').$('li:nth-child(2)').$('a') }  
+   get registerBtn() {return $('.dropdown-menu.dropdown-menu-right').$('li:nth-child(1)').$('a')}  
+   // a[] 
+   get loginBtn() {return $('.dropdown-menu.dropdown-menu-right').$('li:nth-child(2)').$('a')}  
 
 
    //-------------------------------------------------------------------------------------------------------//
@@ -56,16 +56,16 @@ class HomePage extends BasePage {
     * Clickear sobre register 
     */
    async clickRegister() {
-      addStep('Ingresar en register.')
-      await super.clickearElemento(this.register);
+      addStep('Ingresar en register.');
+      await super.clickearElemento(this.registerBtn);
    }
 
    /**
     * Clickear sobre login
     */
    async clickLogIn() {
-      addStep('Ingresar en login.')
-      await super.clickearElemento(this.login);
+      addStep('Ingresar en login.');
+      await super.clickearElemento(this.loginBtn);
    }
 
 }

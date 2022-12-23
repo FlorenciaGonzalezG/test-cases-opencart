@@ -4,23 +4,23 @@ class LogInPage extends BasePage {
 
     //Web elements
 
-    get logInCol()      { return $('#content') };
+    get logInCol() {return $('#content')};
 
-    get dropDownMenu()  { return $('.dropdown-menu.dropdown-menu-right') };
+    get dropDownMenu() {return $('.dropdown-menu.dropdown-menu-right')};
 
-    get emailForm()     { return $('#input-email') };
+    get emailForm() {return $('#input-email')};
 
-    get passwordForm()  { return $('#input-password') };
+    get passwordForm() {return $('#input-password')};
 
-    get loginBtn()      { return $('input.btn.btn-primary') };
+    get loginBtn() {return $('input.btn.btn-primary')};
 
     get loginPageSttl() { return $('h2:nth-child(1)') };
 
-    get logout()        { return $('a:nth-child(13)') };
+    get logout() {return $('a:nth-child(13)')};
 
-    get logoutSttl()    { return $('p:nth-child(2)') };
+    get logoutSttl() {return $('p:nth-child(2)')};
 
-    get continueBtn()   { return $('.btn.btn-primary') };
+    get continueBtn() {return $('.btn.btn-primary')};
 
     //--------------------------------------------------------------------------------------------------//
 
@@ -49,7 +49,7 @@ class LogInPage extends BasePage {
       * Salir de la cuenta
       */
      async logoutAccount() {
-        addStep('Salir de la cuenta.')
+        addStep('Salir de la cuenta.');
         await super.clickearElemento(this.logout);
      }
 

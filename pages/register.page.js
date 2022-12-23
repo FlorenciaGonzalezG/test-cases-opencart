@@ -3,33 +3,34 @@ import BasePage from './base.page';
 class registerPage extends BasePage {
 
     //Web Elements
-    get pageTtl()             { return $('#content').$('h1') };
+    get pageTtl() { return $('#content').$('h1') };
+   
+    get dropDownMenu() {return $('.dropdown-menu.dropdown-menu-right')};
 
-    get dropDownMenu()        { return $('.dropdown-menu.dropdown-menu-right') };
+    get firstNameForm() {return $('#input-firstname')};
 
-    get firstNameForm()       { return $('#input-firstname') };
+    get lastNameForm() {return $('#input-lastname')};
 
-    get lastNameForm()        { return $('#input-lastname') };
+    get emailForm() {return $('#input-email')};
 
-    get emailForm()           { return $('#input-email') };
-
-    get telephoneForm()       { return $('#input-telephone') };
+    get telephoneForm() {return $('#input-telephone')};
     
-    get passwordForm()        { return $('#input-password') };
+    get passwordForm() {return $('#input-password')};
 
-    get passwordConfirmForm() { return $('#input-confirm') };
+    get passwordConfirmForm() {return $('#input-confirm')};
 
-    get agreeChk()            { return $('[type=checkbox]') };
+    get agreeChk() {return $('[type=checkbox]')};
 
-    get continueFormBtn()     { return $('[type=submit]') };
+    get continueFormBtn() {return $('[type=submit]')};
 
-    get successfullyMsg()     { return $('#content').$('p:nth-child(2)') }
+    get successfullyMsg() {return $('#content').$('p:nth-child(2)')};
+    //p[contains(text(),"Congratulations!")]
 
-    get continueBtn()         { return $('.btn.btn-primary') };
+    get continueBtn() {return $('.btn.btn-primary')};
 
-    get breadCrumb()          { return $('.breadcrumb') };
+    get breadCrumb() {return $('.breadcrumb')};
 
-    get homeBtn()             { return $('#logo').$('h1').$('a') };   
+    get homeBtn() {return $('#logo').$('h1').$('a')};   
 
    
 
@@ -72,7 +73,7 @@ class registerPage extends BasePage {
       * @returns string
       */
      async getsuccessfullyMsg () {
-        return await this.successfullyMsg.getText()
+        return await this.successfullyMsg.getText();
      }
 
      /**
@@ -86,7 +87,7 @@ class registerPage extends BasePage {
       * Volver a la pagina principal
       */
      async backHomePage() {
-        await super.clickearElemento(this.homeBtn)
+        await super.clickearElemento(this.homeBtn);
      }
 }
 export default new registerPage();

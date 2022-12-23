@@ -4,10 +4,14 @@ class shoppingcartPage extends BasePage {
 
     //Web Elements 
 
-    get shoppingCartBtn() { return $('#cart-total') };
-    get total()           { return $('//tr[4]/td[2]') };
-    get removeBtn()       { return $('.btn.btn-danger.btn-xs') };
-    get allertMsg()       { return $('//li/p') }; 
+    get shoppingCartBtn() {return $('#cart-total')};
+    
+    get total() {return $('//tr[4]/td[2]')};
+    
+    get removeBtn() {return $('.btn.btn-danger.btn-xs')};
+    // usar child
+    
+    get allertMsg() {return $('//li/p')}; 
 
     //--------------------------------------------------------------------------------------------
 
