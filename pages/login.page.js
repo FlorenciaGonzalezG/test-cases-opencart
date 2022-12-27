@@ -14,11 +14,11 @@ class LogInPage extends BasePage {
 
     get loginBtn() {return $('input.btn.btn-primary')};
 
-    get loginPageSttl() {return $('h2:nth-child(1)')};
+    get loginPageSttl() {return $('//h2[contains(text(), "My Account")]')};
 
-    get logout() {return $('a:nth-child(13)')};
+    get logout() {return $('//div/a[contains(text(), "Logout")]')};
 
-    get logoutSttl() {return $('p:nth-child(2)')};
+    get logoutSttl() {return $('//p[contains(text(), "You have been logged off")]')};
 
     get continueBtn() {return $('.btn.btn-primary')};
 

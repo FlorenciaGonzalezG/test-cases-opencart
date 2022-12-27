@@ -9,7 +9,6 @@ class shoppingcartPage extends BasePage {
     get total() {return $('//tr[4]/td[2]')};
     
     get removeBtn() {return $('.btn.btn-danger.btn-xs')};
-    // usar child
     
     get allertMsg() {return $('//li/p')}; 
 

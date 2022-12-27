@@ -12,8 +12,8 @@ class HomePage extends BasePage {
    get dropDownMyAccount() {return $('.dropdown')};
    
    get registerBtn() {return $('//a[contains(text(), "Register")]')}  
-   // a[] 
-   get loginBtn() {return $('.dropdown-menu.dropdown-menu-right').$('li:nth-child(2)').$('a')}  
+   
+   get loginBtn() {return $('//a[contains(text(), "Login")]')}  
 
 
    //-------------------------------------------------------------------------------------------------------//

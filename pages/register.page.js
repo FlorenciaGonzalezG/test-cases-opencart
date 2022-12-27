@@ -23,14 +23,13 @@ class registerPage extends BasePage {
 
     get continueFormBtn() {return $('[type=submit]')};
 
-    get successfullyMsg() {return $('#content').$('p:nth-child(2)')};
-    //p[contains(text(),"Congratulations!")]
+    get successfullyMsg() {return $('//p[contains(text(),"Congratulations!")]')};
 
     get continueBtn() {return $('.btn.btn-primary')};
 
     get breadCrumb() {return $('.breadcrumb')};
 
-    get homeBtn() {return $('#logo').$('h1').$('a')};   
+    get homeBtn() {return $('h1').$('a')};   
     
 
 

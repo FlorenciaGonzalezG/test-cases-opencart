@@ -1,0 +1,64 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1672154958720' stop='1672154982167'>
+    <name>Register new user</name>
+    <title>Register new user</title>
+    <test-cases>
+        <test-case start='1672154958723' status='passed' stop='1672154982165'>
+            <name>Should register new user</name>
+            <title>Should register new user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.125'/>
+            </parameters>
+            <steps>
+                <step start='1672154962252' status='passed' stop='1672154962252'>
+                    <name>Display my account dropdown.</name>
+                    <title>Display my account dropdown.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672154962914' status='passed' stop='1672154962914'>
+                    <name>Enter register.</name>
+                    <title>Enter register.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672154969440' status='passed' stop='1672154969440'>
+                    <name>Llenar formulario de register.</name>
+                    <title>Llenar formulario de register.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672154972537' status='passed' stop='1672154972537'>
+                    <name>Aceptar politicas de privacidad.</name>
+                    <title>Aceptar politicas de privacidad.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672154972953' status='passed' stop='1672154972953'>
+                    <name>Enviar formulario.</name>
+                    <title>Enviar formulario.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672154976496' status='passed' stop='1672154976496'>
+                    <name>The user registered successfully.</name>
+                    <title>The user registered successfully.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672154976664' status='passed' stop='1672154976664'>
+                    <name>Return to main page.</name>
+                    <title>Return to main page.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
