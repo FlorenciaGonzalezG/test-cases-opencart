@@ -1,0 +1,70 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1672152360220' stop='1672152380277'>
+    <name>Carry out login</name>
+    <title>Carry out login</title>
+    <test-cases>
+        <test-case start='1672152360222' status='passed' stop='1672152380275'>
+            <name>Should enter to user account</name>
+            <title>Should enter to user account</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.125'/>
+            </parameters>
+            <steps>
+                <step start='1672152360473' status='passed' stop='1672152360473'>
+                    <name>Enter to main page.</name>
+                    <title>Enter to main page.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672152365397' status='passed' stop='1672152365397'>
+                    <name>Display my account dropdown.</name>
+                    <title>Display my account dropdown.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672152367040' status='passed' stop='1672152367040'>
+                    <name>Enter login.</name>
+                    <title>Enter login.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672152371373' status='passed' stop='1672152371373'>
+                    <name>Fill login fields.</name>
+                    <title>Fill login fields.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672152372725' status='passed' stop='1672152372725'>
+                    <name>Send form.</name>
+                    <title>Send form.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672152374056' status='passed' stop='1672152374056'>
+                    <name>Login to account successfully.</name>
+                    <title>Login to account successfully.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672152374838' status='passed' stop='1672152374838'>
+                    <name>Logout account.</name>
+                    <title>Logout account.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672152377345' status='passed' stop='1672152377345'>
+                    <name>Return to main page</name>
+                    <title>Return to main page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

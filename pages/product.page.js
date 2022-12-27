@@ -20,23 +20,23 @@ class ProductPage extends BasePage {
 /**
  * Ingresar al resultado de la busqueda
  */
-   async ingresarAlProducto(producto) {
-    addStep(`Ingresar al producto: ${producto}.`);
+   async enterToProduct(producto) {
+    addStep(`Enter to the product: ${producto}.`);
     await super.clickearElemento(this.producto);
    }
 
 /**
  * Obtener nombre del producto
  */
-   async obtenerNombreProducto() {
+   async getPriceProduct() {
     return await this.productName.getText();
    }
 
 /**
  * Anadir producto al carrito 
  */
-   async anadirAlCarrito() {
-    addStep('Agregar producto al carrito.');
+   async addToCart() {
+    addStep('Add product to shopping cart.');
     await super.clickearElemento(this.addCartBtn); 
    }  
 

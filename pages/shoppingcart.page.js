@@ -18,8 +18,8 @@ class shoppingcartPage extends BasePage {
     /**
      * Ingresar al shopping cart
      */
-    async ingresarAlCarrito() {
-      addStep('Ingresar al carrito');
+    async enterToShoppingCart() {
+      addStep('Enter to the shopping cart');
         await super.clickearElemento(this.shoppingCartBtn);
     }
 
@@ -34,7 +34,7 @@ class shoppingcartPage extends BasePage {
      * Eliminar producto del carrito
      */
     async removeProduct() {
-      addStep('Eliminar productos del carrito');
+      addStep('Remove products from cart');
         await super.clickearElemento(this.removeBtn);
     }
 

@@ -11,7 +11,7 @@ class HomePage extends BasePage {
    
    get dropDownMyAccount() {return $('.dropdown')};
    
-   get registerBtn() {return $('.dropdown-menu.dropdown-menu-right').$('li:nth-child(1)').$('a')}  
+   get registerBtn() {return $('//a[contains(text(), "Register")]')}  
    // a[] 
    get loginBtn() {return $('.dropdown-menu.dropdown-menu-right').$('li:nth-child(2)').$('a')}  
 
@@ -22,8 +22,8 @@ class HomePage extends BasePage {
     * Escribe el artículo en el campo de búsqueda y presiona Enter
     * @param {String} articulo que se buscará
     */
-   async buscar(articulo) {
-    addStep(`Buscar producto: ${articulo}`);
+   async search(articulo) {
+    addStep(`Search product: ${articulo}`);
        await super.vaciarCampoYEnviarTexto(await this.barraDeBusqueda, articulo);
        await this.barraDeBusqueda.keys('Enter');
    }
@@ -31,8 +31,8 @@ class HomePage extends BasePage {
    /**
     * Obtener texto de la barra de búsqueda
     */
-   async obtenerTextoBusqueda() {
-    addStep('Obtener texto de la barra de búsqueda');
+   async searchText() {
+    addStep('Get text from search bar');
        return await this.barraDeBusqueda.getValue();
    }
 
@@ -40,15 +40,15 @@ class HomePage extends BasePage {
     * Hacer click sobre el logo para volver a la pagina principal
     */
    async returnMainPage() {
-    addStep('Retorna a la pagina principal.');
+    addStep('Return to the main page.');
       await super.clickearElemento(this.storeTtl);
    }
    
    /**
     * Desplegar dropdown de my account
     */
-   async desplegarDropDown() {
-      addStep('Desplegar dropdown de my account.');
+   async displayDropDown() {
+      addStep('Display my account dropdown.');
       await super.clickearElemento(this.dropDownMyAccount);
    }
    
@@ -56,7 +56,7 @@ class HomePage extends BasePage {
     * Clickear sobre register 
     */
    async clickRegister() {
-      addStep('Ingresar en register.');
+      addStep('Enter register.');
       await super.clickearElemento(this.registerBtn);
    }
 
@@ -64,7 +64,7 @@ class HomePage extends BasePage {
     * Clickear sobre login
     */
    async clickLogIn() {
-      addStep('Ingresar en login.');
+      addStep('Enter login.');
       await super.clickearElemento(this.loginBtn);
    }
 

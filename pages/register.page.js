@@ -31,6 +31,8 @@ class registerPage extends BasePage {
     get breadCrumb() {return $('.breadcrumb')};
 
     get homeBtn() {return $('#logo').$('h1').$('a')};   
+    
+
 
    
 
@@ -40,7 +42,7 @@ class registerPage extends BasePage {
      *  Obtener titulo de la pagina
      * @returns String
      */
-    async getPageTitle() {
+    async getPageTtl() {
        return await this.pageTtl.getText();
     }
 
@@ -58,7 +60,7 @@ class registerPage extends BasePage {
         addStep('Llenar formulario de register.');
         await this.firstNameForm.setValue(firstName);
         await this.lastNameForm.setValue(lastName);
-        await this.emailForm.setValue(email)
+        await this.emailForm.setValue(email);
         await this.telephoneForm.setValue(telephone);
         await this.passwordForm.setValue(password);
         await this.passwordConfirmForm.setValue(confirmPassword);

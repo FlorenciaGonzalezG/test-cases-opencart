@@ -1,0 +1,190 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1672152182301' stop='1672152229474'>
+    <name>Shopping cart</name>
+    <title>Shopping cart</title>
+    <test-cases>
+        <test-case start='1672152182303' status='passed' stop='1672152202985'>
+            <name>Should look for MacBook and add it to shopping cart</name>
+            <title>Should look for MacBook and add it to shopping cart</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.125'/>
+            </parameters>
+            <steps>
+                <step start='1672152187416' status='passed' stop='1672152187416'>
+                    <name>Search product: MacBook</name>
+                    <title>Search product: MacBook</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672152193208' status='passed' stop='1672152193208'>
+                    <name>Get text from search bar</name>
+                    <title>Get text from search bar</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672152193389' status='passed' stop='1672152193389'>
+                    <name>Enter to the product: MacBook.</name>
+                    <title>Enter to the product: MacBook.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672152198385' status='passed' stop='1672152198385'>
+                    <name>Get product price: MacBook</name>
+                    <title>Get product price: MacBook</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672152199441' status='passed' stop='1672152199441'>
+                    <name>Add prices to an array</name>
+                    <title>Add prices to an array</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672152201255' status='passed' stop='1672152201255'>
+                    <name>Add product to shopping cart.</name>
+                    <title>Add product to shopping cart.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672152201996' status='passed' stop='1672152201996'>
+                    <name>Get add to cart success message</name>
+                    <title>Get add to cart success message</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1672152202986' status='passed' stop='1672152222296'>
+            <name>Should look for iPhone and add it to shopping cart</name>
+            <title>Should look for iPhone and add it to shopping cart</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.125'/>
+            </parameters>
+            <steps>
+                <step start='1672152204143' status='passed' stop='1672152204143'>
+                    <name>Search product: iPhone</name>
+                    <title>Search product: iPhone</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672152206770' status='passed' stop='1672152206770'>
+                    <name>Get text from search bar</name>
+                    <title>Get text from search bar</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672152206865' status='passed' stop='1672152206865'>
+                    <name>Enter to the product: iPhone.</name>
+                    <title>Enter to the product: iPhone.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672152219618' status='passed' stop='1672152219618'>
+                    <name>Get product price: iPhone</name>
+                    <title>Get product price: iPhone</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672152219910' status='passed' stop='1672152219910'>
+                    <name>Add prices to an array</name>
+                    <title>Add prices to an array</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672152220622' status='passed' stop='1672152220622'>
+                    <name>Add product to shopping cart.</name>
+                    <title>Add product to shopping cart.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672152221336' status='passed' stop='1672152221336'>
+                    <name>Get add to cart success message</name>
+                    <title>Get add to cart success message</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1672152222298' status='passed' stop='1672152229472'>
+            <name>Should check that the two products were added to the cart</name>
+            <title>Should check that the two products were added to the cart</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.125'/>
+            </parameters>
+            <steps>
+                <step start='1672152222299' status='passed' stop='1672152222299'>
+                    <name>Enter to the shopping cart</name>
+                    <title>Enter to the shopping cart</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672152222913' status='passed' stop='1672152222913'>
+                    <name>Get total cart purchase price</name>
+                    <title>Get total cart purchase price</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672152223363' status='passed' stop='1672152223363'>
+                    <name>Compare product price with cart total price</name>
+                    <title>Compare product price with cart total price</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672152223363' status='passed' stop='1672152223363'>
+                    <name>Remove products from cart</name>
+                    <title>Remove products from cart</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672152224323' status='passed' stop='1672152224323'>
+                    <name>Enter to the shopping cart</name>
+                    <title>Enter to the shopping cart</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672152225608' status='passed' stop='1672152225608'>
+                    <name>Remove products from cart</name>
+                    <title>Remove products from cart</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672152226247' status='passed' stop='1672152226247'>
+                    <name>Enter to the shopping cart</name>
+                    <title>Enter to the shopping cart</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672152227461' status='passed' stop='1672152227461'>
+                    <name>Allert message: Your shopping cart is empty!</name>
+                    <title>Allert message: Your shopping cart is empty!</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672152227569' status='passed' stop='1672152227569'>
+                    <name>Return to the main page.</name>
+                    <title>Return to the main page.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

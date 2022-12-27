@@ -14,7 +14,7 @@ class LogInPage extends BasePage {
 
     get loginBtn() {return $('input.btn.btn-primary')};
 
-    get loginPageSttl() { return $('h2:nth-child(1)') };
+    get loginPageSttl() {return $('h2:nth-child(1)')};
 
     get logout() {return $('a:nth-child(13)')};
 
@@ -31,10 +31,10 @@ class LogInPage extends BasePage {
      */
 
      async loginForm(email, password) {
-        addStep('Llenar campos del login.');
+        addStep('Fill login fields.');
         await this.emailForm.setValue(email)
         await this.passwordForm.setValue(password);
-        addStep('Enviar formulario.');
+        addStep('Send form.');
         await super.clickearElemento(this.loginBtn);
      }
     
@@ -49,7 +49,7 @@ class LogInPage extends BasePage {
       * Salir de la cuenta
       */
      async logoutAccount() {
-        addStep('Salir de la cuenta.');
+        addStep('Logout account.');
         await super.clickearElemento(this.logout);
      }
 
