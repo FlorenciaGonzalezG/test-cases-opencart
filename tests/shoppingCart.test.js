@@ -1,6 +1,6 @@
 import homePage from '../pages/home.page';
 import productPage from '../pages/product.page';
-import shoppingcartPage from '../pages/shoppingcart.page';
+import shoppingcartPage from '../pages/shoppingCart.page';
 import { assert } from 'chai';
 import utilitiesMethods from '../utils/utilitiesMethods';
 
@@ -19,8 +19,8 @@ describe ('Shopping cart',() => {
         assert.equal(await homePage.searchText(),(product),'Error: The expected text was not displayed in the search bar');
         await productPage.enterToProduct(product);
         addStep(`Get product price: ${product}`);
-        let stringPrice = (await productPage.price());
-        let numberPrice = (await utilitiesMethods.makeSplit(stringPrice, "$", 1));
+        const stringPrice = (await productPage.price());
+        const numberPrice = (await utilitiesMethods.makeSplit(stringPrice, "$", 1));
         addStep('Add prices to an array');
         arrayPrice.push(numberPrice);
         assert.equal(await productPage.getPriceProduct(),(product), 'Error: The expected header was not displayed');

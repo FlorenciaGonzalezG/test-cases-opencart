@@ -1,0 +1,44 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1672182669633' stop='1672182676283'>
+    <name>Carry out login</name>
+    <title>Carry out login</title>
+    <test-cases>
+        <test-case start='1672182669634' status='broken' stop='1672182676280'>
+            <name>Should enter to user account</name>
+            <title>Should enter to user account</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.125'/>
+            </parameters>
+            <steps>
+                <step start='1672182669674' status='passed' stop='1672182669674'>
+                    <name>Enter to main page.</name>
+                    <title>Enter to main page.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672182675576' status='passed' stop='1672182675576'>
+                    <name>Display my account dropdown.</name>
+                    <title>Display my account dropdown.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Screenshot' source='4c34ff37-7a80-4df6-9f57-24bd0949ae60-attachment.png' type='image/png' size='163138'/>
+            </attachments>
+            <failure>
+                <message>elemento.waitForClickable is not a function</message>
+                <stack-trace>TypeError: elemento.waitForClickable is not a function
+                    at HomePage.clickearElemento (C:\Users\flore\Documents\GitHub\test-cases-opencart\pages\/base.page.js:20:23)
+                    at HomePage.displayDropDown (C:\Users\flore\Documents\GitHub\test-cases-opencart\pages\/home.page.js:55:19)
+                    at Context.&lt;anonymous> (C:\Users\flore\Documents\GitHub\test-cases-opencart\tests\/login.test.js:10:24)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

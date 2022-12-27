@@ -15,6 +15,8 @@ class HomePage extends BasePage {
    
    get loginBtn() {return $('//a[contains(text(), "Login")]')}  
 
+   get topBar() {return $('#top')};
+
 
    //-------------------------------------------------------------------------------------------------------//
 

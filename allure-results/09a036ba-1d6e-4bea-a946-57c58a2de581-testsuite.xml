@@ -1,0 +1,38 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1672182567830' stop='1672182572729'>
+    <name>Register new user</name>
+    <title>Register new user</title>
+    <test-cases>
+        <test-case start='1672182567831' status='broken' stop='1672182572728'>
+            <name>Should register new user</name>
+            <title>Should register new user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.125'/>
+            </parameters>
+            <steps>
+                <step start='1672182572412' status='passed' stop='1672182572413'>
+                    <name>Display my account dropdown.</name>
+                    <title>Display my account dropdown.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Screenshot' source='6d4000e3-1fb5-4533-a804-dcb67283860f-attachment.png' type='image/png' size='163138'/>
+            </attachments>
+            <failure>
+                <message>elemento.waitForClickable is not a function</message>
+                <stack-trace>TypeError: elemento.waitForClickable is not a function
+                    at HomePage.clickearElemento (C:\Users\flore\Documents\GitHub\test-cases-opencart\pages\/base.page.js:20:23)
+                    at HomePage.displayDropDown (C:\Users\flore\Documents\GitHub\test-cases-opencart\pages\/home.page.js:55:19)
+                    at Context.&lt;anonymous> (C:\Users\flore\Documents\GitHub\test-cases-opencart\tests\/register.test.js:12:24)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
