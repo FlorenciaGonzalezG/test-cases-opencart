@@ -17,6 +17,10 @@ class HomePage extends BasePage {
 
    get topBar() {return $('#top')};
 
+   get currencyBtn() {return $('//span[text()="Currency"]')}
+
+   
+
 
    //-------------------------------------------------------------------------------------------------------//
 
@@ -68,6 +72,24 @@ class HomePage extends BasePage {
    async clickLogIn() {
       addStep('Enter login.');
       await super.clickearElemento(this.loginBtn);
+   }
+
+   /**
+    * Clickear sobre currency 
+    */
+   async clickCurrency() {
+      addStep('Display currency dropdown.');
+      await super.clickearElemento(this.currencyBtn);
+   }
+
+   /**
+    * Cambiar tipo de moneda
+    * @param {String} typeCurrency 
+    */
+   async changeCurrency(typeCurrency) {
+      addStep(`Change currency to ${typeCurrency}`);
+      const currencyBtn = $(`button[name=${typeCurrency}]`);
+      await currencyBtn.click();
    }
 
 }

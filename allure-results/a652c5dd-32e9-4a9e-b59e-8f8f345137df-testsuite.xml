@@ -1,0 +1,48 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1672264361099' stop='1672264368970'>
+    <name>Currency</name>
+    <title>Currency</title>
+    <test-cases>
+        <test-case start='1672264361101' status='broken' stop='1672264368969'>
+            <name>Should change the currency</name>
+            <title>Should change the currency</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.125'/>
+            </parameters>
+            <steps>
+                <step start='1672264366795' status='passed' stop='1672264366796'>
+                    <name>Enter currency.</name>
+                    <title>Enter currency.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672264367467' status='passed' stop='1672264367467'>
+                    <name>'Change currency to "EUR"'</name>
+                    <title>'Change currency to "EUR"'</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Screenshot' source='392e3bbc-5f21-4d65-8d58-d507f58f59a0-attachment.png' type='image/png' size='157625'/>
+            </attachments>
+            <failure>
+                <message>The selector "'//button[name="EUR"]'" used with strategy "css selector" is invalid! For more information on selectors visit the WebdriverIO docs at: https://webdriver.io/docs/selectors</message>
+                <stack-trace>invalid selector: The selector "'//button[name="EUR"]'" used with strategy "css selector" is invalid! For more information on selectors visit the WebdriverIO docs at: https://webdriver.io/docs/selectors
+                    at getErrorFromResponseBody (C:\Users\flore\Documents\GitHub\test-cases-opencart\node_modules\webdriver\build\utils.js:198:12)
+                    at NodeJSRequest._request (C:\Users\flore\Documents\GitHub\test-cases-opencart\node_modules\webdriver\build\request\index.js:166:60)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+                    at Browser.wrapCommandFn (C:\Users\flore\Documents\GitHub\test-cases-opencart\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at Browser.$ (C:\Users\flore\Documents\GitHub\test-cases-opencart\node_modules\webdriverio\build\commands\browser\$.js:91:17)
+                    at Browser.wrapCommandFn (C:\Users\flore\Documents\GitHub\test-cases-opencart\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at HomePage.changeCurrency (C:\Users\flore\Documents\GitHub\test-cases-opencart\pages\/home.page.js:92:7)
+                    at Context.&lt;anonymous> (C:\Users\flore\Documents\GitHub\test-cases-opencart\tests\/changeCurrency.test.js:10:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,14 +1,22 @@
 import homePage from "../pages/home.page"
 
+let typeCurrency = ''
+
 describe('Currency', () => {
     it('Should change the currency', async () => {
         await homePage.open('/');
         expect (await homePage.topBar.isDisplayed(), 'top bar is not displayed').to.be.true;
-        expect(
-            await browser.checkElement(await homePage.topBar, "opencart-topBar", {
-            }),
-            "Error: la barra superior de Opencart no coincide con la original"
-        ).equal(0);
-
-    })
+        addStep('Perform visual regression on the main page.');
+        expect(await browser.checkElement(await homePage.topBar, "opencart-topBar", {}),"Error: Opencart top bar do not match to the original").equal(0);
+        await homePage.clickCurrency();
+        typeCurrency = "EUR";
+        await homePage.changeCurrency(typeCurrency);
+        addStep('Verify that type currency changed');
+        expect(await browser.checkElement(await homePage.topBar, "opencart-topBar", {}),).to.not.equal(0);
+        typeCurrency = "USD";
+        addStep(`Return to original currency ${typeCurrency}`);
+        await homePage.clickCurrency();
+        await homePage.changeCurrency(typeCurrency);
+        expect(await browser.checkElement(await homePage.topBar, "opencart-topBar", {}),"Error: Opencart top bar do not match to the original").equal(0);
+     })
 })

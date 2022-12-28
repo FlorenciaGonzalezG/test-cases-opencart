@@ -1,0 +1,36 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1672266513445' stop='1672266525154'>
+    <name>Currency</name>
+    <title>Currency</title>
+    <test-cases>
+        <test-case start='1672266513446' status='passed' stop='1672266525153'>
+            <name>Should change the currency</name>
+            <title>Should change the currency</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.125'/>
+            </parameters>
+            <steps>
+                <step start='1672266520533' status='passed' stop='1672266520533'>
+                    <name>Enter currency.</name>
+                    <title>Enter currency.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672266521122' status='passed' stop='1672266521122'>
+                    <name>'Change currency to EUR'</name>
+                    <title>'Change currency to EUR'</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Screenshot' source='c42ed3cd-5f6e-4293-b7ff-280e006139db-attachment.png' type='image/png' size='161240'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

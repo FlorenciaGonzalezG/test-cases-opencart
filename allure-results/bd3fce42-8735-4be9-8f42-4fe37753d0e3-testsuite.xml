@@ -1,0 +1,46 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1672265137599' stop='1672265146367'>
+    <name>Currency</name>
+    <title>Currency</title>
+    <test-cases>
+        <test-case start='1672265137600' status='failed' stop='1672265146366'>
+            <name>Should change the currency</name>
+            <title>Should change the currency</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.125'/>
+            </parameters>
+            <steps>
+                <step start='1672265142025' status='passed' stop='1672265142025'>
+                    <name>Enter currency.</name>
+                    <title>Enter currency.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672265143188' status='passed' stop='1672265143188'>
+                    <name>'Change currency to EUR'</name>
+                    <title>'Change currency to EUR'</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Screenshot' source='c8a07d8c-d528-4665-abd3-0973b397a837-attachment.png' type='image/png' size='157740'/>
+                <attachment title='Screenshot' source='4e6591e1-0096-4689-b5c3-927463ad3c7c-attachment.png' type='image/png' size='158291'/>
+            </attachments>
+            <failure>
+                <message>Error: la barra superior de Opencart no coincide con la original: expected 0.105 to equal +0      
+                      actual expected
+                      
+                      0.105
+                      </message>
+                <stack-trace>AssertionError: Error: la barra superior de Opencart no coincide con la original: expected 0.105 to equal +0
+                    at Context.&lt;anonymous> (C:\Users\flore\Documents\GitHub\test-cases-opencart\tests\/changeCurrency.test.js:15:11)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
