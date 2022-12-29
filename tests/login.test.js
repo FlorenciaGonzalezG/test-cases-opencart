@@ -7,6 +7,7 @@ describe('Carry out login', () => {
     it('Should enter to user account', async () => {
         addStep('Enter to main page.');
         await homePage.open('/');
+        expect(await homePage.mainPage.isDisplayedInViewport(),'Main page is not displayed in the viewport.').to.be.true;
         await homePage.displayDropDown();
         expect(await loginPage.dropDownMenu.isDisplayed(), 'Dropdown menu is not displayed').to.be.true;
         await homePage.clickLogIn();

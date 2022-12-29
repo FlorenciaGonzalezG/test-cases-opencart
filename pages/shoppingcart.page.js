@@ -18,7 +18,7 @@ class shoppingcartPage extends BasePage {
      * Ingresar al shopping cart
      */
     async enterToShoppingCart() {
-      addStep('Enter to the shopping cart');
+      addStep('Enter to shopping cart.');
         await super.clickearElemento(this.shoppingCartBtn);
     }
 
@@ -33,7 +33,7 @@ class shoppingcartPage extends BasePage {
      * Eliminar producto del carrito
      */
     async removeProduct() {
-      addStep('Remove products from cart');
+      addStep('Remove products from cart.');
         await super.clickearElemento(this.removeBtn);
     }
 
@@ -41,7 +41,7 @@ class shoppingcartPage extends BasePage {
      * Obtener alerta de que el carrito esta vacio
      */
     async allertMessage() {
-        addStep('Allert message: Your shopping cart is empty!');
+        addStep('Allert message: Your shopping cart is empty!.');
         return await this.allertMsg.getText();
     }
 

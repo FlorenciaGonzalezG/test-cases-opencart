@@ -56,16 +56,16 @@ class registerPage extends BasePage {
      */
 
     async registerForm(firstName, lastName, email, telephone, password, confirmPassword) {
-        addStep('Llenar formulario de register.');
+        addStep('Fill registration form.');
         await this.firstNameForm.setValue(firstName);
         await this.lastNameForm.setValue(lastName);
         await this.emailForm.setValue(email);
         await this.telephoneForm.setValue(telephone);
         await this.passwordForm.setValue(password);
         await this.passwordConfirmForm.setValue(confirmPassword);
-        addStep('Aceptar politicas de privacidad.');
+        addStep('Accept privacy policies.');
         await super.clickearElemento(this.agreeChk);
-        addStep('Enviar formulario.');
+        addStep('Send form.');
         await super.clickearElemento(this.continueFormBtn);
      }
      

@@ -11,10 +11,10 @@ describe('Currency', () => {
         await homePage.clickCurrency();
         typeCurrency = "EUR";
         await homePage.changeCurrency(typeCurrency);
-        addStep('Verify that type currency changed');
+        addStep('Verify that type currency changed.');
         expect(await browser.checkElement(await homePage.topBar, "opencart-topBar", {}),).to.not.equal(0);
         typeCurrency = "USD";
-        addStep(`Return to original currency ${typeCurrency}`);
+        addStep(`Return to original currency ${typeCurrency}.`);
         await homePage.clickCurrency();
         await homePage.changeCurrency(typeCurrency);
         expect(await browser.checkElement(await homePage.topBar, "opencart-topBar", {}),"Error: Opencart top bar do not match to the original").equal(0);

@@ -9,6 +9,7 @@ import registerPage from "../pages/register.page";
 describe ('Register new user', () => {
     it ('Should register new user', async () => {
         await homePage.open('/');
+        expect(await homePage.mainPage.isDisplayedInViewport(),'Main page is not displayed in the viewport.').to.be.true;
         await homePage.displayDropDown();
         expect(await registerPage.dropDownMenu.isDisplayed(), 'Dropdown menu is not displayed.').to.be.true;
         await homePage.clickRegister();

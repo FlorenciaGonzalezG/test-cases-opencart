@@ -29,7 +29,7 @@ class HomePage extends BasePage {
     * @param {String} articulo que se buscará
     */
    async search(articulo) {
-    addStep(`Search product: ${articulo}`);
+    addStep(`Search product: ${articulo}.`);
        await super.vaciarCampoYEnviarTexto(await this.barraDeBusqueda, articulo);
        await this.barraDeBusqueda.keys('Enter');
    }
@@ -38,7 +38,7 @@ class HomePage extends BasePage {
     * Obtener texto de la barra de búsqueda
     */
    async searchText() {
-    addStep('Get text from search bar');
+    addStep('Get text from search bar.');
        return await this.barraDeBusqueda.getValue();
    }
 
@@ -87,10 +87,19 @@ class HomePage extends BasePage {
     * @param {String} typeCurrency 
     */
    async changeCurrency(typeCurrency) {
-      addStep(`Change currency to ${typeCurrency}`);
+      addStep(`Change currency to ${typeCurrency}.`);
       const currencyBtn = $(`button[name=${typeCurrency}]`);
       await currencyBtn.click();
    }
 
+   /**
+    * Elegir un elemento del footer de la pagina
+    * @param {string} footerElement 
+    */
+   async selectFooterBtn(footerElement) {
+      addStep(`Select footer element: ${footerElement}.`);
+      const footerBtn = $(`//a[contains(text(), ${footerElement})]`);
+      await footerBtn.click();
+   }
 }
 export default new HomePage();

@@ -1,0 +1,58 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1672274901701' stop='1672274923776'>
+    <name>Contact Us</name>
+    <title>Contact Us</title>
+    <test-cases>
+        <test-case start='1672274901703' status='passed' stop='1672274923774'>
+            <name>Should enter to "Contact Us" and send a message.</name>
+            <title>Should enter to "Contact Us" and send a message.</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.125'/>
+            </parameters>
+            <steps>
+                <step start='1672274907918' status='passed' stop='1672274907919'>
+                    <name>Select footer element: "Contact Us"</name>
+                    <title>Select footer element: "Contact Us"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672274911196' status='passed' stop='1672274911196'>
+                    <name>Fill contact us form</name>
+                    <title>Fill contact us form</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672274917727' status='passed' stop='1672274917727'>
+                    <name>Send form.</name>
+                    <title>Send form.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672274920631' status='passed' stop='1672274920631'>
+                    <name>Message has been sent successfully.</name>
+                    <title>Message has been sent successfully.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672274920783' status='passed' stop='1672274920783'>
+                    <name>Return to main page.</name>
+                    <title>Return to main page.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672274920783' status='passed' stop='1672274920783'>
+                    <name>Click on the continue button.</name>
+                    <title>Click on the continue button.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
