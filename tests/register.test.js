@@ -23,6 +23,12 @@ describe ('Register new user', () => {
         expect(await registerPage.breadCrumb.isDisplayedInViewport()).to.be.true;
         await registerPage.backHomePage();
         expect(await homePage.mainPage.isDisplayedInViewport(), 'Main page is not displayed in the viewport.').to.be.true;
+        await homePage.displayDropDown();
+        expect(await registerPage.dropDownMenu.isDisplayed(), 'Dropdown menu is not displayed.').to.be.true;
+        await homePage.clickLogout();
+        expect(await homePage.logoutMsg.isDisplayedInViewport(), 'Logout succesfully message is not displayed in viewport.').to.be.true;
+        await homePage.clickContinueBtn();
+        expect(await homePage.mainPage.isDisplayedInViewport(), 'Main page is not displayed in the viewport.').to.be.true;
 
     })
 })

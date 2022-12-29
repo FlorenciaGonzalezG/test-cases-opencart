@@ -11,13 +11,19 @@ class HomePage extends BasePage {
    
    get dropDownMyAccount() {return $('.dropdown')};
    
-   get registerBtn() {return $('//a[contains(text(), "Register")]')}  
+   get registerBtn() {return $('//a[contains(text(), "Register")]')};  
+
+   get logoutBtn() {return $('//a[contains(text(), "Logout")]')};
+
+   get logoutMsg() {return $('//p[contains(text(),"logged off")]')};
+
+   get continueBtn() {return $('.btn.btn-primary')};
    
-   get loginBtn() {return $('//a[contains(text(), "Login")]')}  
+   get loginBtn() {return $('//a[contains(text(), "Login")]')};  
 
    get topBar() {return $('#top')};
 
-   get currencyBtn() {return $('//span[text()="Currency"]')}
+   get currencyBtn() {return $('//span[text()="Currency"]')};
 
    
 
@@ -64,6 +70,22 @@ class HomePage extends BasePage {
    async clickRegister() {
       addStep('Enter register.');
       await super.clickearElemento(this.registerBtn);
+   }
+
+   /**
+    * Clickear sobre logout
+    */
+   async clickLogout() {
+      addStep('Click logout.');
+      await super.clickearElemento(this.logoutBtn);
+   }
+
+    /**
+    * Clickear sobre boton continuar
+    */
+    async clickContinueBtn() {
+      addStep('Click continue button.');
+      await super.clickearElemento(this.continueBtn);
    }
 
    /**

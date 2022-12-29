@@ -1,0 +1,82 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1672278395197' stop='1672278418753'>
+    <name>Register new user</name>
+    <title>Register new user</title>
+    <test-cases>
+        <test-case start='1672278395198' status='passed' stop='1672278418751'>
+            <name>Should register new user</name>
+            <title>Should register new user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.125'/>
+            </parameters>
+            <steps>
+                <step start='1672278399171' status='passed' stop='1672278399171'>
+                    <name>Display my account dropdown.</name>
+                    <title>Display my account dropdown.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672278400206' status='passed' stop='1672278400206'>
+                    <name>Enter register.</name>
+                    <title>Enter register.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672278403554' status='passed' stop='1672278403554'>
+                    <name>Fill registration form.</name>
+                    <title>Fill registration form.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672278406292' status='passed' stop='1672278406292'>
+                    <name>Accept privacy policies.</name>
+                    <title>Accept privacy policies.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672278406625' status='passed' stop='1672278406625'>
+                    <name>Send form.</name>
+                    <title>Send form.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672278408475' status='passed' stop='1672278408475'>
+                    <name>The user registered successfully.</name>
+                    <title>The user registered successfully.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672278408626' status='passed' stop='1672278408626'>
+                    <name>Return to main page.</name>
+                    <title>Return to main page.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672278414542' status='passed' stop='1672278414542'>
+                    <name>Display my account dropdown.</name>
+                    <title>Display my account dropdown.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672278415272' status='passed' stop='1672278415272'>
+                    <name>Click logout.</name>
+                    <title>Click logout.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1672278416999' status='passed' stop='1672278416999'>
+                    <name>Click continue button.</name>
+                    <title>Click continue button.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

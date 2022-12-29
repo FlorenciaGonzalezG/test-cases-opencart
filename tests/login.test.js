@@ -16,7 +16,7 @@ describe('Carry out login', () => {
         addStep('Login to account successfully.');
         assert.equal(await loginPage.getLoginPageSttl(), 'My Account', 'Error: The expected subtitle was not displayed.');
         await loginPage.logoutAccount();
-        assert.equal(await loginPage.logoutConfirmMsg(), 'You have been logged off your account. It is now safe to leave the computer.','Error: No se mostro el subtitulo esperado');
+        assert.equal(await loginPage.logoutConfirmMsg(), 'You have been logged off your account. It is now safe to leave the computer.','Error: The expected subtitle was not displayed.');
         addStep('Return to main page');
         await loginPage.clickContinueBtn();
         expect(await homePage.mainPage.isDisplayedInViewport(), 'Main page is not displayed in the viewport.').to.be.true;

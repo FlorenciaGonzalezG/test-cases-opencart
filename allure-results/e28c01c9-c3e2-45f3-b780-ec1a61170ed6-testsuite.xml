@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1672278334391' stop='1672278338586'>
+    <name>Register new user</name>
+    <title>Register new user</title>
+    <test-cases>
+        <test-case start='1672278334393' status='broken' stop='1672278338584'>
+            <name>Should register new user</name>
+            <title>Should register new user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.125'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='3109de49-93e7-451e-9d8e-1462b4c49441-attachment.png' type='image/png' size='162666'/>
+            </attachments>
+            <failure>
+                <message>_home.default.mainPage.isDisplayedInViewport is not a function</message>
+                <stack-trace>TypeError: _home.default.mainPage.isDisplayedInViewport is not a function
+                    at Context.&lt;anonymous> (C:\Users\flore\Documents\GitHub\test-cases-opencart\tests\/register.test.js:12:40)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
