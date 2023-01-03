@@ -12,8 +12,6 @@ describe('Carry out login', () => {
          expect(await homePage.mainPage.isDisplayedInViewport(),'Main page is not displayed in the viewport.').to.be.true; 
      });
     it('Should enter to user account', async () => {
-        await homePage.open('/');
-        expect(await homePage.mainPage.isDisplayedInViewport(),'Main page is not displayed in the viewport.').to.be.true; 
         await homePage.displayDropDown();
         expect(await loginPage.dropDownMenu.isDisplayed(), 'Dropdown menu is not displayed').to.be.true;
         await homePage.clickLogIn();
