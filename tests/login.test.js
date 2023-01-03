@@ -1,13 +1,19 @@
+import { assert } from 'chai';
+import { expect } from 'chai';
+import { DATA }  from "../data/login.data.json";
 import homePage  from '../pages/home.page';
 import loginPage from '../pages/login.page';
-import { DATA }  from "../data/login.data.json";
-import { assert } from 'chai';
+
+
 
 describe('Carry out login', () => {
+    before('Enter the main page', async () => {
+         await homePage.open('/');
+         expect(await homePage.mainPage.isDisplayedInViewport(),'Main page is not displayed in the viewport.').to.be.true; 
+     });
     it('Should enter to user account', async () => {
-        addStep('Enter to main page.');
         await homePage.open('/');
-        expect(await homePage.mainPage.isDisplayedInViewport(),'Main page is not displayed in the viewport.').to.be.true;
+        expect(await homePage.mainPage.isDisplayedInViewport(),'Main page is not displayed in the viewport.').to.be.true; 
         await homePage.displayDropDown();
         expect(await loginPage.dropDownMenu.isDisplayed(), 'Dropdown menu is not displayed').to.be.true;
         await homePage.clickLogIn();

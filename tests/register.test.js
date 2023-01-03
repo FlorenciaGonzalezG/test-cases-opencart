@@ -1,4 +1,5 @@
 import { assert } from "chai";
+import { expect } from 'chai';
 import { DATA } from "../data/user.data.json";
 import utilitiesMethods from "../utils/utilitiesMethods";
 import homePage from "../pages/home.page";
@@ -7,9 +8,13 @@ import registerPage from "../pages/register.page";
 
 
 describe ('Register new user', () => {
+    before('Enter the main page', async () => {
+        await homePage.open('/');
+        expect(await homePage.mainPage.isDisplayedInViewport(),'Main page is not displayed in the viewport.').to.be.true; 
+    });
     it ('Should register new user', async () => {
         await homePage.open('/');
-        expect(await homePage.mainPage.isDisplayedInViewport(),'Main page is not displayed in the viewport.').to.be.true;
+        expect(await homePage.mainPage.isDisplayedInViewport(),'Main page is not displayed in the viewport.').to.be.true; 
         await homePage.displayDropDown();
         expect(await registerPage.dropDownMenu.isDisplayed(), 'Dropdown menu is not displayed.').to.be.true;
         await homePage.clickRegister();

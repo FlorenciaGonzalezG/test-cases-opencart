@@ -1,7 +1,8 @@
+import { assert } from 'chai';
+import { expect } from 'chai';
 import homePage from '../pages/home.page';
 import productPage from '../pages/product.page';
 import shoppingcartPage from '../pages/shoppingCart.page';
-import { assert } from 'chai';
 import utilitiesMethods from '../utils/utilitiesMethods';
 
 
@@ -12,11 +13,12 @@ let   arrayPrice    = [];
 
 
 describe ('Shopping cart',() => {
+    before('Enter the main page', async () => {
+        await homePage.open('/');
+        expect(await homePage.mainPage.isDisplayedInViewport(),'Main page is not displayed in the viewport.').to.be.true; 
+    });
     arrayProducts.forEach((product) => { 
     it(`Should look for ${product} and add it to shopping cart`, async () => {
-        await homePage.open('/');
-        expect(await homePage.mainPage.isDisplayedInViewport(),'Main page is not displayed in the viewport.').to.be.true;
-        await homePage.search(product);
         assert.equal(await homePage.searchText(),(product),'Error: The expected text was not displayed in the search bar');
         await productPage.enterToProduct(product);
         addStep(`Get product price: ${product}.`);

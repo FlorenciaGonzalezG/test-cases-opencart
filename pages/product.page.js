@@ -5,7 +5,7 @@ class ProductPage extends BasePage {
 
    //WebElements
 
-   get producto() {return $('//h4/a')};
+   get producto() {return $('h4').$('a')};
    
    get addCartBtn() {return $('#button-cart')};
    

@@ -5,7 +5,7 @@ class HomePage extends BasePage {
    //WebElements
    get barraDeBusqueda() {return $('[name="search"]')};
    
-   get storeTtl() {return $('//h1/a')};
+   get storeTtl() {return $('h1').$('a')};
    
    get mainPage() {return $('#common-home')};
    
@@ -120,7 +120,7 @@ class HomePage extends BasePage {
     */
    async selectFooterBtn(footerElement) {
       addStep(`Select footer element: ${footerElement}.`);
-      const footerBtn = $(`//a[contains(text(), ${footerElement})]`);
+      const footerBtn = $(`//a[contains(text(), "${footerElement}")]`);
       await footerBtn.click();
    }
 }
